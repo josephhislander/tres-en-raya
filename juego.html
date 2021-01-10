@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en raya  by Joseph</title>
+    <link rel="stylesheet" href="css/styleJuego.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+
+    <section class="panelLateral">
+        <div class="panelLateral__puntajes">
+            <div class="panelLateral__contador">
+                <p class="panelLateral__numero" id="contadorO">0</p>
+            </div>
+            <p class="panelLateral__jugador">O</p>
+        </div>
+    </section>
+
+    <section class="panelCentral">
+
+        <div class="panelCentral__puntajes" id="puntajeCentralX"></div>
+
+        <div class="tablero" id="tablero">
+            <div class="tablero__casilla" id="c0"></div>
+            <div class="tablero__casilla" id="c1"></div>
+            <div class="tablero__casilla" id="c2"></div>
+            <div class="tablero__casilla" id="c3"></div>
+            <div class="tablero__casilla" id="c4"></div>
+            <div class="tablero__casilla" id="c5"></div>
+            <div class="tablero__casilla" id="c6"></div>
+            <div class="tablero__casilla" id="c7"></div>
+            <div class="tablero__casilla" id="c8"></div>
+        </div>
+
+        <div class="panelCentral__puntajes" id="puntajeCentralO"></div>
+
+        <nav class="navegacion">
+        <a href="" class="navegacion__boton" >Reiniciar</a>
+        <a class="navegacion__boton" id="atras">Atras</a>
+        <a href="index.html" class="navegacion__boton" >Inicio</a>
+        <a href="tutorial.html" class="navegacion__boton" >Tutorial</a>
+        </nav>
+
+    </section>
+
+    <section class="panelLateral">
+        <div class="panelLateral__puntajes">
+            <div class="panelLateral__contador">
+                <p class="panelLateral__numero" id="contadorX">0</p>
+            </div>
+            <p class="panelLateral__jugador">X</p>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

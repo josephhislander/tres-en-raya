@@ -1,0 +1,111 @@
+
+/* Estilos generles */
+
+html{
+    font-size: 10px;
+}
+
+
+body{
+    background: #E84545;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 1;
+
+}
+
+
+/* Contenedores */
+
+.titulo{
+        text-shadow: 2px 0px  #903749,
+                     -2px 0px #903749,
+                     0px 2px #903749,
+                     0px -2px #903749,
+                     0px 0px 2px #903749;
+    
+        font-size: 5rem;
+   
+        margin: 1.5rem;
+        padding: 1.5rem;
+}
+
+.contenedor{
+    width: 80%;
+    background:#9037497e;
+    margin: 0 auto;
+   
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor__parrafo{
+    font-size: 1.4rem;
+
+}
+
+
+.contenedor__seccion{
+    padding: 1rem;
+    width: 46%;
+}
+
+.contenedor__seccion:hover {
+    text-shadow: 1px 1px 2px #000000;
+    font-weight: bold;
+    background: #00000010;
+    border-radius: 2rem;
+ 
+}
+
+
+.contenedor__img{
+    padding-bottom: 1.5rem;
+}
+
+
+
+.boton{
+    background: #903749;
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 2rem 0;
+    width: 30%;
+    min-width: 20rem;
+    max-width: 25rem;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
+
+
+/* Media querys */
+
+@media screen and (max-width: 650px){
+
+    .contenedor{
+        display: block;
+        
+    }
+    
+
+    .contenedor__seccion{
+        width: 96%;
+ 
+    }
+
+    .contenedor__seccion:hover{
+        background: transparent;
+    }
+
+    .boton{
+        margin-bottom: 4rem;
+    }
+}

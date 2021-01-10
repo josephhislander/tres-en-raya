@@ -1,0 +1,181 @@
+
+/* Estilos generales */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+body{
+    display: flex;
+}
+
+
+/* Paneles laterales  */
+
+
+.panelLateral{
+    background: #2B2E4A;
+    width: 33vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panelLateral__puntajes{
+    color: #ffffff;
+    font-size: 7rem;
+    font-weight: 600;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.panelLateral__contador{
+    background-color: #E84545;
+    width: 11rem;
+    height: 11rem;
+    line-height: 11rem;
+    border-radius: 1rem;
+    text-shadow: 2px 0px  #903749,
+    -2px 0px #903749,
+    0px 2px #903749,
+    0px -2px #903749,
+    0px 0px 2px #903749;
+    
+}
+
+.panelLateral__jugador{
+    color: #E84545;
+    margin: 0;
+}
+
+
+/* Panel central y componentes */
+
+.panelCentral{
+    background: #53354A;
+    width: 33vw;
+    min-width: 375px;
+    height: 100vh;
+}
+
+.tablero{
+    background: #2B2E4A;
+    width: 350px;
+    height: 350px;
+    margin: 1.5rem auto 0 auto;
+    border: solid 3rem #E84545 ;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tablero__casilla{
+    background: #ffffff;
+    width: 32.5%;
+    height: 32.5%;
+    margin: 0.1rem;
+    border: solid .2rem #2B2E4A;
+    font-size: 8rem;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #2B2E4A;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.navegacion{
+   
+    width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    margin: 2rem auto 0 auto;
+}
+
+.navegacion__boton{
+    background: #90374981;
+    width: 48%;
+    color: #fff;
+    font-size: 1.8rem ;
+    font-weight: 300;
+    line-height: 4rem;
+    text-decoration: none;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  
+}
+
+.navegacion__boton:hover{
+    font-weight: 600;
+    background: #00000048;
+}
+
+.panelCentral__puntajes{
+    min-width: 35rem;
+    min-height: 5rem;
+    width: 80%;
+    background: #903749;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 1rem;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 3rem;
+    padding: 1rem 3rem 1rem 3rem;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+   
+}
+
+
+/* Media querys */
+
+@media screen and (max-width: 650px){
+
+
+    .panelLateral{
+        display: none;
+    }
+
+    body{
+        background:#2B2E4A;
+    }
+
+    .panelCentral{
+        min-width: 34rem;
+        margin: 0 auto;
+        /* display: flex;
+        align-items: center;
+        justify-content: space-around; */
+    }
+
+    .tablero{
+       width: 31rem;
+        height: 31rem;
+    }
+
+    .panelCentral__puntajes{
+       min-width: 30rem;
+    }
+
+    #puntajeCentralX{
+        margin-top: 15vh;
+    }
+
+    .navegacion {
+       
+        width: 28rem;
+    }
+
+}
+

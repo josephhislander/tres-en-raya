@@ -1,0 +1,86 @@
+
+/* estilos generales */
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background: #E84545;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    line-height: 1;
+
+}
+
+
+
+/* titulo y botones */
+
+.contenedor__titulo{
+    text-shadow: 2px 0px  #903749,
+                 -2px 0px #903749,
+                 0px 2px #903749,
+                 0px -2px #903749,
+                 0px 0px 2px #903749;
+
+    font-size: 5rem;
+
+
+}
+
+.navegacion{
+    
+    width: 100%;
+
+}
+
+.contenedor{
+   
+    width: 100%;
+}
+
+.boton{
+    background: #9037497e;
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 2rem 0;
+    width: 30%;
+    max-width: 250px ;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+}
+
+.boton:hover{
+    background: #903749;
+    font-weight: bolder;
+}
+    
+
+
+/* Media querys */
+
+@media screen and (max-width: 650px){
+
+
+   .boton{
+       display: block;
+       margin: 1.5rem auto;
+       min-width: 21.05rem;
+     
+   }
+
+   .contenedor__titulo{
+       font-size: 4rem ;
+   }
+
+}
